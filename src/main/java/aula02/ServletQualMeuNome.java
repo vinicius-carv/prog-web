@@ -30,7 +30,7 @@ public class ServletQualMeuNome extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		PrintWriter saida = response.getWriter();
-		saida.write("<HTML><BODY><a href=ServletFelipeLima>Qual o meu nome?</a></BODY></HTML>");
+		saida.write("<HTML><BODY><a href=ServletVinicius>Qual o meu nome?</a></BODY></HTML>");
 		saida.close();
 	}
 
