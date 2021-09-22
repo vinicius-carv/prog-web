@@ -31,7 +31,7 @@ public class ServletMeuNome extends HttpServlet {
 		
 		PrintWriter saida = response.getWriter();
 		
-		saida.write("<HTML><Body><h1 style=text-align:center;>Meu nome e Vinicius Carvalho.</h1></Body></HTML>");
+		saida.write("<HTML><Body><h1 style=text-align:center;>Meu nome é Arthur Souza.</h1></Body></HTML>");
 		
 		saida.close();
 	}

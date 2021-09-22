@@ -25,16 +25,16 @@ public class ServletAgenda extends HttpServlet {
     }
 
 	/**
-	 * Crie um Servlet chamado ServletAgenda que receba parï¿½metros de uma entrada de agenda 
-	 * (nome, telefone do usuï¿½rio e data de nascimento) e que retorna uma pï¿½gina HTML 
-	 * apresentando os dados recebidos. Crie tambï¿½m uma classe chamada ServletPaginaAgenda
-	 *  que retorna uma pï¿½gina HTML com um formulï¿½rio para enviar os dados para o ServletAgenda criado anteriormente.
+	 * Crie um Servlet chamado ServletAgenda que receba parâmetros de uma entrada de agenda 
+	 * (nome, telefone do usuário e data de nascimento) e que retorna uma página HTML 
+	 * apresentando os dados recebidos. Crie também uma classe chamada ServletPaginaAgenda
+	 *  que retorna uma página HTML com um formulário para enviar os dados para o ServletAgenda criado anteriormente.
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		/*
-		String nome = "Vinicius";
-		int telefone = 996696051;
-		String dta_nascimento = "25/11/2002";
+		String nome = "Arthur";
+		int telefone = 982723123;
+		String dta_nascimento = "25/11/2001";
 		
 		
 		*/
@@ -46,16 +46,16 @@ public class ServletAgenda extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter saida = response.getWriter();
 		
-		String nome = request.getParameter("name");
-		String telefone = request.getParameter("tel");
-		String nascimento = request.getParameter("nasc");
+		String nome = request.getParameter("nome");
+		String telefone = request.getParameter("telefone");
+		String nascimento = request.getParameter("nascimento");
 		
 		saida.write("<HTML><Body>");
 		saida.write("<h1 style=text-align:center;>Agenda</h1>");
 		saida.write("<div style=display:flex;justify-content:center;align-items:center;>");
-		saida.write("<br>Nome: "+ name);
-		saida.write("<br>Telefone: "+ tel);
-		saida.write("<br>Data de nascimento: "+ nasc);
+		saida.write("<br>Nome: "+ nome);
+		saida.write("<br>Telefone: "+ telefone);
+		saida.write("<br>Data de nascimento: "+ nascimento);
 		saida.write("</div>");
 		saida.write("</Body></HTML>");
 		saida.close();
